@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Beta</title>
+    <link rel="stylesheet" href="form-design.css">
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><strong>Cadastro - Acesso Antecipado</strong></legend>
+                <p style="font-size: 13px; text-align: center;">Preencha o formulário com suas informações</p>
+                <br>
+                <div class="data">
+                    <input type="text" name="name" id="name" class="userInput" required>
+                    <label for="name" class="labelInput">Nome completo</label>
+                </div><br><br>
+                <div class="data">
+                    <input type="text" name="nickname" id="nickname" class="userInput" required>
+                    <label for="nickname" class="labelInput">Usuário</label>
+                </div><br><br>
+                <div class="data">
+                    <input type="text" name="emailadress" id="emailadress" class="userInput" required>
+                    <label for="emailadress" class="labelInput">Email</label>
+                </div><br><br>
+                <div class="data">
+                    <input type="tel" name="telephone" id="telephone" class="userInput" required>
+                    <label for="telephone" class="labelInput">Telefone</label>
+                </div><br>
+                <!--Colocar div aqui?-->
+                <p>Marque a região do Brasil que você mora:</p>
+                    <input type="radio" name="region" id="centro-oeste" value="centro-oeste" required checked>
+                    <label for="centro-oeste">Centro-Oeste</label><br>
+                    <input type="radio" name="region" id="nordeste" value="nordeste" required>
+                    <label for="nordeste">Nordeste</label><br>
+                    <input type="radio" name="region" id="norte" value="norte" required>
+                    <label for="norte">Norte</label><br>
+                    <input type="radio" name="region" id="sudeste" value="sudeste" required>
+                    <label for="sudeste">Sudeste</label><br> <!--O for do label é referente ao id do input-->
+                    <input type="radio" name="region" id="sul" value="sul" required>
+                    <label for="sul">Sul</label>
+                <br><br>
+                    <label for="birthday">Data de Nascimento</label>
+                    <input type="date" name="birthday" id="birthday" required>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
